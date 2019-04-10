@@ -2,7 +2,7 @@ package com.java.ds.linkedlists;
 
 public class RemoveMiddleNodes {
 
-	public static Node head;
+//	public static Node head;
 	public Node head1 = null;
 
 	public static class Node {
@@ -15,7 +15,7 @@ public class RemoveMiddleNodes {
 		}
 	}
 
-	public void display(Node node) {
+	public static void display(Node node) {
 		Node pointer = node;
 
 		System.out.println("list is ");
@@ -47,17 +47,25 @@ public class RemoveMiddleNodes {
 	public static Node removeMiddles(Node head) {
 		Node doublePointer = head;
 		Node singlePointer = head;
+		Node deletePointer = null;
 
 		while (doublePointer.next != null && doublePointer.next.next != null ) {
+//		while (doublePointer.next != null && doublePointer != null ) {
+			deletePointer = singlePointer;
 			singlePointer = singlePointer.next;
 			doublePointer = doublePointer.next.next;
 		}
 
-		singlePointer = singlePointer.next.next;
+		deletePointer.next = singlePointer.next;
+//		singlePointer= singlePointer.next;
+		
+//		singlePointer= deletePointer.next;
 //		while (singlePointer != null) {
 ////			this.addNodeToNewList(singlePointer.data);
 //			singlePointer = singlePointer.next;
 //		}
+		
+		display(head);
 		return head;
 	}
 
@@ -76,7 +84,7 @@ public class RemoveMiddleNodes {
 	}
 
 	public static void main(String[] args) {
-		RemoveMiddleNodes object = new RemoveMiddleNodes();
+//		RemoveMiddleNodes object = new RemoveMiddleNodes();
 		Node head = new Node(10);
 //		Node head1;
 		Node n2 = new Node(20);
@@ -89,10 +97,12 @@ public class RemoveMiddleNodes {
 		n3.next = n4;
 //		n4.next = n5;
 		
-		object.display(head);
+//		object.display(head);
+		display(head);
 		
 //		head = object.removeMiddles(head);
 		head = removeMiddles(head);
-		object.display(head);
+//		object.display(head);
+		display(head);
 	}
 }
