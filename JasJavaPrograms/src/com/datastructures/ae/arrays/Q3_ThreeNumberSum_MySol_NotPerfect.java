@@ -18,7 +18,6 @@ public class Q3_ThreeNumberSum_MySol_NotPerfect {
     }
 
     public static List<Integer[]> threeNumberSum(int[] array, int targetSum) {
-        // Write your code here.
 
 //find the inner target such that targetSum = innerTarget + a pair of 2 numbers - n1 and n2
 //in the inner loop we'll find that pair
@@ -52,7 +51,6 @@ public class Q3_ThreeNumberSum_MySol_NotPerfect {
             }
         }
         return resultList;
-//        return new ArrayList<Integer[]>();
     }
 }
 

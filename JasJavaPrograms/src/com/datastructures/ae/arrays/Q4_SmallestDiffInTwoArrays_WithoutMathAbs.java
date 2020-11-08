@@ -11,7 +11,6 @@ public class Q4_SmallestDiffInTwoArrays_WithoutMathAbs {
     }
 
     public static int[] smallestDifference(int[] arrayOne, int[] arrayTwo) {
-        // Write your code here.
 
         Arrays.sort(arrayOne);
         Arrays.sort(arrayTwo);
@@ -49,7 +48,6 @@ public class Q4_SmallestDiffInTwoArrays_WithoutMathAbs {
         }
 
         return outputArray;
-//        return new int[]{};
     }
 
 

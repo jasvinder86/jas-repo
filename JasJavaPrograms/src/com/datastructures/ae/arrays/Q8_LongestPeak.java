@@ -15,7 +15,6 @@ public class Q8_LongestPeak {
 
 
     public static int longestPeak(int[] array) {
-        // Write your code here.
 
         int longestPeak = 0;
 
@@ -52,8 +51,6 @@ public class Q8_LongestPeak {
         }
         return longestPeak;
 
-
-//        return -1;
     }
 
 }

@@ -17,7 +17,6 @@ public class Q3_ThreeNumberSum_SolWithPtrs {
     }
 
     public static List<Integer[]> threeNumberSum(int[] array, int targetSum) {
-        // Write your code here.
 
         Arrays.sort(array);
 
@@ -38,7 +37,6 @@ public class Q3_ThreeNumberSum_SolWithPtrs {
             }
         }
         return resultList;
-//        return new ArrayList<Integer[]>();
     }
 }
 
