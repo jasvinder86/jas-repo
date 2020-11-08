@@ -1,4 +1,4 @@
-package stack;
+package com.java.ds.random.stack;
 
 public class StackByLinkedList {
 
@@ -36,14 +36,14 @@ public class StackByLinkedList {
 			root = newNode;
 
 		}
-		System.out.println(data + " has been pushed onto the stack");
+		System.out.println(data + " has been pushed onto the com.java.ds.stack");
 
 	}
 
 	public int pop() {
 		int tempNode = Integer.MIN_VALUE;
 		if (root == null) {
-			System.out.println("stack underflow");
+			System.out.println("com.java.ds.stack underflow");
 		}
 
 		else {
@@ -56,7 +56,7 @@ public class StackByLinkedList {
 	public int top() {
 		int temp = Integer.MIN_VALUE;
 		if (root == null) {
-			System.out.println("stack underflow");
+			System.out.println("com.java.ds.stack underflow");
 		}
 		
 		else {

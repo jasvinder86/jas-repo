@@ -1,4 +1,4 @@
-package linkedlist;
+package com.java.ds.random.linkedlist;
 
 //A complete working Java program to demonstrate all 
 

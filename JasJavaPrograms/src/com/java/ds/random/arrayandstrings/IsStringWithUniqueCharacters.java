@@ -1,4 +1,4 @@
-package com.java.ds.arrayandstrings;
+package com.java.ds.random.arrayandstrings;
 
 public class IsStringWithUniqueCharacters {
 

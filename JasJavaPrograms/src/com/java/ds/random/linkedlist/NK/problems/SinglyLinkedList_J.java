@@ -1,4 +1,4 @@
-package linkedlist.NK.problems;
+package com.java.ds.random.linkedlist.NK.problems;
 
 public class SinglyLinkedList_J {
 

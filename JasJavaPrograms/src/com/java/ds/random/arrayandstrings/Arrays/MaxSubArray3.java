@@ -1,7 +1,4 @@
-package interviewBit.Arrays;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.java.ds.random.arrayandstrings.Arrays;
 
 public class MaxSubArray3 {
 

@@ -1,10 +1,6 @@
-package com.java.ds.linkedlists;
+package com.java.ds.random.linkedlists;
 
-import java.awt.HeadlessException;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Hashtable;
-import java.util.TreeMap;
 
 public class DeDuplicateAList {
 

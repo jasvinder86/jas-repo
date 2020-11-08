@@ -1,4 +1,4 @@
-package interviewBit.Arrays;
+package com.java.ds.random.arrayandstrings.Arrays;
 
 import java.util.ArrayList;
 import java.util.List;

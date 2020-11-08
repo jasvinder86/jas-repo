@@ -1,4 +1,4 @@
-package com.java.ds.linkedlists;
+package com.java.ds.random.linkedlists;
 
 public class RemoveMiddleNodes {
 
