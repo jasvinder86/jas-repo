@@ -3,11 +3,11 @@ package com.datastructures.gtci.pattern3.fastSlowPointers;
 // Given the head of a Singly LinkedList that contains a cycle,
 // write a function to find the starting node of the cycle.
 
-class ListNode1 {
+class ListNode {
     int data;
-    ListNode1 next;
+    ListNode next;
 
-    public ListNode1(int data) {
+    public ListNode(int data) {
         this.data = data;
     }
 }
@@ -20,9 +20,9 @@ public class StartOfLinkedListCycle {
 //    3. Find length of the cycle by moving the slow pointer till it reaches the meeting point.
 //    4. Start P1 and P2 at the head and then move P2 forward by the length of the cycle.
 //    5. Now keep moving both the pointers by 1. Where they meet will be the start of the cycle.
-    
-    public static ListNode1 findCycleStart(ListNode1 head) {
-        ListNode1 slowPointer = head, fastPointer = head;
+
+    public static ListNode findCycleStart(ListNode head) {
+        ListNode slowPointer = head, fastPointer = head;
 
         //        1. First find if the cycle exists by using slow and fast pointers.
         do {
@@ -31,7 +31,7 @@ public class StartOfLinkedListCycle {
         } while (slowPointer != fastPointer);
 
         //        2. When the 2 pointers in step 1 meet, call it the meeting point.
-        ListNode1 meetingPoint = slowPointer;
+        ListNode meetingPoint = slowPointer;
 
         //    3. Find length of the cycle by moving the slow pointer till it reaches the meeting point.
         int cycleLength = 0;
@@ -41,7 +41,7 @@ public class StartOfLinkedListCycle {
         } while (slowPointer != meetingPoint);
 
         //    4. Start P1 and P2 at the head and then move P2 forward by the length of the cycle.
-        ListNode1 pointer1 = head, pointer2 = head;
+        ListNode pointer1 = head, pointer2 = head;
         for (int i = 0; i < cycleLength; i++) {
             pointer2 = pointer2.next;
         }
@@ -57,13 +57,13 @@ public class StartOfLinkedListCycle {
     }
 
     public static void main(String[] args) {
-        ListNode1 head = new ListNode1(1);
-        head.next = new ListNode1(2);
-        head.next.next = new ListNode1(3);
-        head.next.next.next = new ListNode1(4);
-        head.next.next.next.next = new ListNode1(5);
-        head.next.next.next.next.next = new ListNode1(6);
-        head.next.next.next.next.next.next = new ListNode1(7);
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+        head.next.next.next.next.next = new ListNode(6);
+        head.next.next.next.next.next.next = new ListNode(7);
 
         head.next.next.next.next.next.next = head.next.next;
         System.out.println("Start of the cycle is " + StartOfLinkedListCycle.findCycleStart(head).data);

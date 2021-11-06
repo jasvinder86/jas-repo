@@ -1,16 +1,8 @@
 package com.datastructures.gtci.pattern3.fastSlowPointers;
 
-class ListNode {
-    int data;
-    ListNode next;
-
-    public ListNode(int data) {
-        this.data = data;
-    }
-}
-
 public class MiddleOfTheLinkedList {
 
+    //    ListNode has been defined in the StartOfLinkedListCycle. Reusing that here.
     public static ListNode getMiddleNode(ListNode head) {
 
         ListNode slowPointer = head;
