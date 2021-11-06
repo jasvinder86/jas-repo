@@ -9,3 +9,6 @@ DS problem patterns:
    used. Time complexity = O(N), O(K+N) = O(N)
 2. Two Pointers: Used when dealing with sorted arrays/ linked lists to find a set of elements that fulfil certain
    constraints. The set of elements could be a pair, a triplet or even a subarray. Mind the word SORTED.
+3. Fast Slow Pointers
+4. Merge Intervals
+5. Cyclic Sort: This pattern describes an interesting approach to deal with problems involving arrays containing numbers in a given range.
