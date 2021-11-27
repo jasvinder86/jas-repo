@@ -51,6 +51,7 @@ public class ReverseASubListInSinglePass {
         ListNode result = ReverseASubListInSinglePass.reverse(head, 3, 6);
 
 //        Alternate Question : Reverse the first ‘k’ elements of a given LinkedList
+//        Doesn't work correctly when p=1 ie first node also has ot be reversed
 //        ListNode result = ReverseASubListInSinglePass.reverse(head, 1, 3);
 
         System.out.print("Nodes of the reversed sublist are ");
