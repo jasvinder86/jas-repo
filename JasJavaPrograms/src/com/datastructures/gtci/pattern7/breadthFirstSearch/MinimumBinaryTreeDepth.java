@@ -3,7 +3,14 @@ package com.datastructures.gtci.pattern7.breadthFirstSearch;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/*
+Problem Statement:
+Find the minimum depth of a binary tree.
+The minimum depth is the number of nodes along the shortest path from the root node to the nearest leaf node.
+*/
+
 public class MinimumBinaryTreeDepth {
+
     public static int findDepth(TreeNode root) {
 
         if (root == null)
