@@ -74,5 +74,23 @@ public class InsertInterval {
             System.out.print("[" + interval.start + "," + interval.end + "] ");
         System.out.println();
 
+        input = new ArrayList<Interval>();
+        input.add(new Interval(2, 3));
+        input.add(new Interval(6, 7));
+
+        System.out.println("Intervals after inserting the new interval: ");
+        for (Interval interval : InsertInterval.insert(input, new Interval(4, 5)))
+            System.out.print("[" + interval.start + "," + interval.end + "] ");
+        System.out.println();
+
+        input = new ArrayList<Interval>();
+        input.add(new Interval(2, 3));
+        input.add(new Interval(6, 7));
+
+        System.out.println("Intervals after inserting the new interval: ");
+        for (Interval interval : InsertInterval.insert(input, new Interval(2, 7)))
+            System.out.print("[" + interval.start + "," + interval.end + "] ");
+        System.out.println();
+
     }
 }
