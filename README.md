@@ -12,3 +12,8 @@ DS problem patterns:
 3. Fast Slow Pointers
 4. Merge Intervals
 5. Cyclic Sort: This pattern describes an interesting approach to deal with problems involving arrays containing numbers in a given range.
+6. In-place Reversal of a LinkedList: In a lot of problems, we are asked to reverse the links between a set of nodes of a LinkedList. Often, the constraint is that we need to do this in-place, i.e., using the existing node objects and without using extra memory.
+7. Any problem involving the traversal of a tree in a level-by-level order can be efficiently solved using this approach. We will use a Queue to keep track of all the nodes of a level before we jump onto the next level. This also means that the space complexity of the algorithm will be O(W), where ‘W’ is the maximum number of nodes on any level.
+8. This pattern can be solved using recursion (or a stack for the iterative approach) to keep track of all the previous (parent) nodes while traversing. This also means that the space complexity of the algorithm will be O(H), where ‘H’ is the maximum height of the tree.
+9. Topological Sort: It is used to find a linear ordering of elements that have dependencies on each other. For example, if event ‘B’ is dependent on event ‘A’, ‘A’ comes before ‘B’ in topological ordering.
+
