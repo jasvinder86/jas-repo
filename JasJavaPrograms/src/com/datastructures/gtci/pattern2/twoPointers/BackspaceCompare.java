@@ -1,5 +1,9 @@
 package com.datastructures.gtci.pattern2.twoPointers;
 
+/*
+ * Comparing Strings containing Backspaces
+ * Given two strings containing backspaces (identified by the character ‘#’), check if the two strings are equal.
+ */
 public class BackspaceCompare {
 
     public static boolean compare(String str1, String str2) {

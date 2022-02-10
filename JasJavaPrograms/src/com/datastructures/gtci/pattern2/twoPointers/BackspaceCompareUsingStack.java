@@ -2,6 +2,10 @@ package com.datastructures.gtci.pattern2.twoPointers;
 
 import java.util.Stack;
 
+/*
+ * Comparing Strings containing Backspaces
+ * Given two strings containing backspaces (identified by the character ‘#’), check if the two strings are equal.
+ */
 public class BackspaceCompareUsingStack {
 
     public static boolean compare(String str1, String str2) {
