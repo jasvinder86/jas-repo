@@ -25,7 +25,15 @@ public class MergeIntervalsRev {
 
         Collections.sort(intervals,
                 (i, j) ->
-                        Integer.compare(i.start, j.start));
+                        Integer.compare(i.start, j.start)
+        );
+
+        /* The general syntax for using lambda expressions is
+         * (Parameters) -> { Body } where the -> separates parameters and lambda expression body.
+         * The parameters are enclosed in parentheses which is the same way as for methods and
+         * the lambda expression body is a block of code enclosed in braces.
+         */
+
 
         List<Interval1> mergedIntervals = new LinkedList<Interval1>();
         Iterator<Interval1> iterator = intervals.iterator();
