@@ -96,7 +96,7 @@ public class SlidingWindowMedian {
         System.out.println();
 
 //        This test is failing
-//        This test has been corrected. Refer * at
+//        This test has been corrected. Refer *** at line 20
         slidingWindowMedian = new SlidingWindowMedian();
         result = slidingWindowMedian.findSlidingWindowMedian(new int[]{-2147483648, -2147483648, 2147483647, -2147483648, -2147483648, -2147483648, 2147483647, 2147483647, 2147483647, 2147483647, -2147483648, 2147483647, -2147483648}, 3);
         System.out.print("Sliding window medians are: ");
