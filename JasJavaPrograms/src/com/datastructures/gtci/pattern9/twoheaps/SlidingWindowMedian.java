@@ -1,5 +1,6 @@
 package com.datastructures.gtci.pattern9.twoheaps;
 
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 /*
@@ -16,8 +17,16 @@ public class SlidingWindowMedian {
         double[] result = new double[nums.length - k + 1];
 
 //        1. Creating two priority queues to hold lower and higher values.
-        maxHeap = new PriorityQueue<>((a, b) -> b - a);
-        minHeap = new PriorityQueue<>((a, b) -> a - b);
+//        ***
+//        maxHeap = new PriorityQueue<>((a, b) -> b - a);
+//        minHeap = new PriorityQueue<>((a, b) -> a - b);
+//        When comparing long integers, this comparator will give erroneous results. Hence the better solution is to use
+//        the below line of code with Collections.reverseOrder()
+//        Refer this stack overflow answer for more details
+//        https://stackoverflow.com/questions/683041/how-do-i-use-a-priorityqueue
+
+        maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+        minHeap = new PriorityQueue<>();
 
         int windowEnd = 0;
 
@@ -87,6 +96,7 @@ public class SlidingWindowMedian {
         System.out.println();
 
 //        This test is failing
+//        This test has been corrected. Refer * at
         slidingWindowMedian = new SlidingWindowMedian();
         result = slidingWindowMedian.findSlidingWindowMedian(new int[]{-2147483648, -2147483648, 2147483647, -2147483648, -2147483648, -2147483648, 2147483647, 2147483647, 2147483647, 2147483647, -2147483648, 2147483647, -2147483648}, 3);
         System.out.print("Sliding window medians are: ");
