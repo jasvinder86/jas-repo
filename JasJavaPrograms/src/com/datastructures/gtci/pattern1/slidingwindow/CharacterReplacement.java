@@ -16,6 +16,7 @@ public class CharacterReplacement {
         int maxLength = 0, windowStart = 0, maxCharacterCount = 0;
         Map<Character, Integer> characterIntegerMap = new HashMap<>();
 
+//        Not the best solution, runs in O(n^2)
         for (int windowEnd = 0; windowEnd < str.length(); windowEnd++) {
 
 //            keep adding the upcoming chars to the map 1 by 1
@@ -36,10 +37,43 @@ public class CharacterReplacement {
         return maxLength;
     }
 
+    /* Easier and better solution*/
+    public static int findLength_1(String s, int k) {
+        int windowStart = 0, windowEnd = 0, maxLength = 0;
+
+        Map<Character, Integer> map = new HashMap<>();
+        int mostFrequentCharacterCount = 0;
+
+        while (windowEnd < s.length()) {
+            map.put(s.charAt(windowEnd), map.getOrDefault(s.charAt(windowEnd), 0) + 1);
+
+            //  Keep track of count of the most frequent character
+            mostFrequentCharacterCount = Math.max(mostFrequentCharacterCount, map.get(s.charAt(windowEnd)));
+
+            if ((windowEnd - windowStart + 1) - mostFrequentCharacterCount > k) {
+                map.put(s.charAt(windowStart), map.get(s.charAt(windowStart)) - 1);
+
+                if (map.get(s.charAt(windowStart)) == 0) {
+                    map.remove(s.charAt(windowStart));
+                }
+                windowStart++;
+            }
+
+            maxLength = Math.max(windowEnd - windowStart + 1, maxLength);
+            windowEnd++;
+        }
+        return maxLength;
+    }
+
+
     public static void main(String[] args) {
         System.out.println(CharacterReplacement.findLength("aabccbb", 2));  //expected output = 5
         System.out.println(CharacterReplacement.findLength("abbcb", 1));    //expected output = 4
         System.out.println(CharacterReplacement.findLength("abccde", 1));   //expected output = 3
+
+        System.out.println(CharacterReplacement.findLength_1("aabccbb", 2));  //expected output = 5
+        System.out.println(CharacterReplacement.findLength_1("abbcb", 1));    //expected output = 4
+        System.out.println(CharacterReplacement.findLength_1("abccde", 1));   //expected output = 3
     }
 
 }
