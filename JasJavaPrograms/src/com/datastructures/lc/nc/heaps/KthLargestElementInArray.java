@@ -18,6 +18,8 @@ public class KthLargestElementInArray {
 
     public static void main(String[] args) {
         KthLargestElementInArray kthLargestElementInArray = new KthLargestElementInArray();
-        System.out.println(kthLargestElementInArray.KthLargest(2, new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1}));
+        System.out.println(kthLargestElementInArray.KthLargest(2, new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1}));   // Exp = 8, Actual = 8
+        System.out.println(kthLargestElementInArray.KthLargest(2, new int[]{3, 2, 1, 5, 6, 4}));            // Exp = 5, Actual = 5
+        System.out.println(kthLargestElementInArray.KthLargest(4, new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}));   // Exp = 4, Actual = 4
     }
 }
