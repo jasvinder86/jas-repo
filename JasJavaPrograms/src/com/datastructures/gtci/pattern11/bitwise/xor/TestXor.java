@@ -35,6 +35,5 @@ public class TestXor {
         TestXor.xorWithAsciiValues('a', 'c');           // expected = 2; actual = 2
 
         TestXor.xorWithAsciiValues('a', 'b', 'c');      // expected = 96; actual = 96
-
     }
 }
