@@ -1,5 +1,7 @@
 package com.datastructures.gtci.pattern11.bitwise.xor;
 
+import com.datastructures.agoda.SumWithoutCarry;
+
 public class SumOfTwoIntegersWithoutCarry {
 
     public static int getSumWithoutPlusOperator(int a, int b) {
@@ -22,5 +24,6 @@ public class SumOfTwoIntegersWithoutCarry {
         SumOfTwoIntegersWithoutCarry.getSumWithoutPlusOperator(2, 3);    // expected = 5; actual = 5
         SumOfTwoIntegersWithoutCarry.getSumWithoutPlusOperator(0, 0);    // expected = 0; actual = 0
         SumOfTwoIntegersWithoutCarry.getSumWithoutPlusOperator(-1, -1);    // expected = -2; actual = -2
+        SumOfTwoIntegersWithoutCarry.getSumWithoutPlusOperator(99990879, 654);
     }
 }

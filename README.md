@@ -30,4 +30,6 @@ This pattern can be solved using recursion (or a stack for the iterative approac
 
 **11. Monotonic Stack:** Perfect for finding next or previous lesser or greater elements. They use monotonically increasing or decreasing stacks.
 
- 
+**12. Bitwise Manipulation:** Sum of two numbers can be calculated by XORing the inputs and then ANDing and moving the resultant bits by 1 position to the left. When the AND's result becomes 0, the last XOR operation's result is the final sum.  
+
+Use HashSets when dealing with unique values.
