@@ -45,6 +45,7 @@ public class ValidParentheses {
 
     public static void main(String[] args) {
         ValidParentheses validParentheses = new ValidParentheses();
+        System.out.println(validParentheses.isValid("([}}])")); // Expected = false, Actual = false
         System.out.println(validParentheses.isValid("(())")); // Expected = true, Actual = true
         System.out.println(validParentheses.isValid("({[]})")); // Expected = true, Actual = true
         System.out.println(validParentheses.isValid("({[}{]})")); // Expected = false, Actual = false
