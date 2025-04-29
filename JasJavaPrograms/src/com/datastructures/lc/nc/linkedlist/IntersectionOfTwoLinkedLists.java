@@ -4,8 +4,6 @@ package com.datastructures.lc.nc.linkedlist;
  * LeetCode #160 https://leetcode.com/problems/intersection-of-two-linked-lists/
  * */
 
-import jdk.internal.org.objectweb.asm.tree.IincInsnNode;
-
 class ListNode {
     int data;
     ListNode next;
