@@ -1,4 +1,4 @@
-package com.javaconcepts;
+package com.javaConceptsRefresher;
 
 public class UpdatedSwitch {
 
